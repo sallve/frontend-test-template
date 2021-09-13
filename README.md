@@ -76,7 +76,7 @@ Se {key} não existir, retorna um novo carrinho
 ```
 
 ### Edita um produto em um carrinho
-`PUT http://demotestalb-88047269.us-east-2.elb.amazonaws.com/cart/{key}/product/:cart_sku_key`
+`PUT http://demotestalb-88047269.us-east-2.elb.amazonaws.com/cart/{key}/product/{cart_sku_key}`
 ```
 {
   "qty": number
@@ -84,7 +84,7 @@ Se {key} não existir, retorna um novo carrinho
 ```
 
 ### Deleta um produto de um carrinho
-`DELETE http://demotestalb-88047269.us-east-2.elb.amazonaws.com/cart/{key}/product/:cart_sku_key`
+`DELETE http://demotestalb-88047269.us-east-2.elb.amazonaws.com/cart/{key}/product/{cart_sku_key}`
 
 
 
