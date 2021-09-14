@@ -88,5 +88,54 @@ Se {key} não existir, retorna um novo carrinho
 
 
 
+## Entidades
 
+### Product
+```
+IProduct {
+  key: string;
+  name: string;
+  image: string;
+  skus: ISku[];
+  created_at: string;
+  updated_at: string;
+}
+```
 
+### SKU
+```
+ISku {
+  key: string;
+  inventory: number;
+  price: number;
+  created_at: string;
+  updated_at: string;
+  product_key: string;
+  product: IProduct;
+}
+```
+
+### Cart
+```
+ICart {
+  key: string;
+  cartSkus: ICartSku[];
+  created_at: string;
+  updated_at: string;
+}
+
+```
+
+### Cart_SKU
+```
+ICartSku {
+  key: string;
+  qty: number;
+  cart_key: string;
+  cart: ICart;
+  sku_key: string;
+  sku: ISku;
+  created_at: string;
+  updated_at: string;
+}
+```
